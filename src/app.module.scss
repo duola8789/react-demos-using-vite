@@ -1,0 +1,35 @@
+/**
+ * Created by zh on 2023/3/31.
+ */
+.container {
+  height: 100%;
+  background: red;
+}
+
+.content {
+  padding: 32px;
+  height: 100%;
+
+  & > div {
+    height: 100%;
+  }
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: url('@/assets/images/home.png') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.logoCollapsed {
+    transform: scale(0);
+  }
+}
