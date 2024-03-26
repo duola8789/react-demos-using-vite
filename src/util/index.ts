@@ -5,7 +5,7 @@ import isoWeek from 'dayjs/plugin/isoWeek';
 
 dayjs.extend(isoWeek);
 
-export const clipItemToIndex = (input: any[], oldIndex: number, newIndex: number) => {
+export const clipItemToIndex = <T>(input: T[], oldIndex: number, newIndex: number): T[] => {
   const len = input.length;
   if (oldIndex > len || newIndex > len || oldIndex === newIndex) {
     return input;
