@@ -6,12 +6,18 @@
   background: red;
 }
 
-.content {
-  padding: 32px;
+.main {
   height: 100%;
 
   & > div {
     height: 100%;
+  }
+
+  .layoutContent {
+    margin: 24px;
+    padding: 24px;
+    background-color: rgb(228, 241, 239);
+    border-radius: 8px;
   }
 }
 
@@ -28,8 +34,12 @@
   &:hover {
     transform: scale(1.1);
   }
+}
 
-  &.logoCollapsed {
-    transform: scale(0);
-  }
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 0 0 0 16px;
 }

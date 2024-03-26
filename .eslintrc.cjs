@@ -15,6 +15,7 @@ module.exports = {
         arrowParens: 'avoid'
       }
     ],
+    'no-debugger': 'off',
     // 'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
     // suppress errors for missing 'import React' in files

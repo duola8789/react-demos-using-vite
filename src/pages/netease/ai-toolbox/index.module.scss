@@ -1,0 +1,13 @@
+:global {
+  .ant-modal {
+    &[class*='_toolboxContainer'] {
+      .ant-modal-content {
+        padding: 0 !important;
+      }
+
+      .ant-modal-header {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}

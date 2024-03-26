@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { Router, RouteComponentProps } from '@reach/router';
 import App from './app';
 
-import './styles/reset.css';
-import './styles/common.css';
+import '@/styles/reset.css';
+import '@/styles/common.css';
 
 const AppInRouter = (_props: RouteComponentProps) => <App />;
 

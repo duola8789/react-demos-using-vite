@@ -2,8 +2,8 @@ import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
 export interface ComRegister {
-  name: string;
-  path: string;
+  label: string;
+  key: string;
   icon?: React.ReactNode;
   component?: React.ElementType;
   hideInMenu?: boolean;
@@ -11,8 +11,8 @@ export interface ComRegister {
 }
 
 export interface ComRegisterChild {
-  name: string;
-  path: string;
+  label: string;
+  key: string;
   component: React.ElementType;
 }
 
