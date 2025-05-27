@@ -16,5 +16,7 @@
   "proseWrap": "preserve",
   "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "lf",
-  "vueIndentScriptAndStyle": false
+  "vueIndentScriptAndStyle": false,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindConfig": "./tailwind.config.js"
 }

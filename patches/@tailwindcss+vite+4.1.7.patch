@@ -1,0 +1,17 @@
+diff --git a/node_modules/@tailwindcss/vite/package.json b/node_modules/@tailwindcss/vite/package.json
+index dc03694..b19fa46 100644
+--- a/node_modules/@tailwindcss/vite/package.json
++++ b/node_modules/@tailwindcss/vite/package.json
+@@ -38,5 +38,12 @@
+   "scripts": {
+     "build": "tsup-node",
+     "dev": "pnpm run build -- --watch"
++  },
++  "types": "./dist/index.d.mts",
++  "exports": {
++    ".": {
++      "types": "./dist/index.d.mts",
++      "import": "./dist/index.mjs"
++    }
+   }
+ }

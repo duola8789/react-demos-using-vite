@@ -2,15 +2,17 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import eslint from 'vite-plugin-eslint';
 import mkcert from 'vite-plugin-mkcert';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(async () => ({
   plugins: [
     react(),
     eslint({
       cache: false
     }),
-    mkcert()
+    mkcert(),
+    tailwindcss()
   ],
   resolve: {
     alias: {
@@ -19,7 +21,7 @@ export default defineConfig({
   },
   server: {
     https: true,
-    host: '0.0.0.0',
+    host: true,
     proxy: {
       '/it-plugins': {
         target: 'https://waimao.cowork.netease.com/',
@@ -31,4 +33,4 @@ export default defineConfig({
       }
     }
   }
-});
+}));

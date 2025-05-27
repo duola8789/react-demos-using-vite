@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className={styles.homeContainer}>
       <img className={styles.logo} src={logo} alt="logo" />
+      <h1 className="text-3xl font-bold bg-amber-50">Hello world!</h1>
     </div>
   );
 };

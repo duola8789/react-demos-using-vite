@@ -1,4 +1,10 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,        // ✅ 支持 Node.js 全局变量
+    commonjs: true     // ✅ 支持 CommonJS (module.exports, require)
+  },
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'prettier'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier'],
