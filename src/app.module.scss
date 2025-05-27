@@ -2,13 +2,10 @@
  * Created by zh on 2023/3/31.
  */
 .container {
-  height: 100%;
-  background: red;
+  min-height: 100vh;
 }
 
 .main {
-  height: 100%;
-
   & > div {
     height: 100%;
   }

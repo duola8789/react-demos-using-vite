@@ -17,6 +17,4 @@
   "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "lf",
   "vueIndentScriptAndStyle": false,
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindConfig": "./tailwind.config.js"
 }

@@ -8,19 +8,27 @@ const App = React.lazy(() => import('@/app'));
 const AiToolbox = React.lazy(() => import('@/pages/netease/ai-toolbox'));
 const WaterFall = React.lazy(() => import('@/pages/netease/waterfall'));
 const TextRoll = React.lazy(() => import('@/pages/netease/text-roll'));
+const Tailwind = React.lazy(() => import('@/pages/others/tailwind'));
 
 export const ROUTE_CONFIG: ComRegister[] = [
   { label: '首页', key: '/', hideInMenu: true, component: <Home /> },
   {
     label: '业务Demo',
     icon: <GithubOutlined />,
-    key: '/demos',
+    key: '/netease',
     component: <Outlet />,
     children: [
-      { label: '瀑布流', key: '/demos/waterfall', component: <WaterFall /> },
-      { label: 'AiToolbox', key: '/demos/ai-toolbox', component: <AiToolbox /> },
-      { label: '文字滚动', key: '/demos/text-roll', component: <TextRoll /> }
+      { label: '瀑布流', key: '/netease/waterfall', component: <WaterFall /> },
+      { label: 'AiToolbox', key: '/netease/ai-toolbox', component: <AiToolbox /> },
+      { label: '文字滚动', key: '/netease/text-roll', component: <TextRoll /> }
     ]
+  },
+  {
+    label: '其他Demo',
+    icon: <GithubOutlined />,
+    key: '/others',
+    component: <Outlet />,
+    children: [{ label: 'TailwindCSS', key: '/others/tailwind', component: <Tailwind /> }]
   },
   { label: '404', key: '*', hideInMenu: true, component: <NotFount /> }
 ];

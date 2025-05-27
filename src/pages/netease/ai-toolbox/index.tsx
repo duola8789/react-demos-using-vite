@@ -45,12 +45,25 @@ const AiToolbox = () => {
 
   return (
     <div className={styles.aiToolbox}>
-      <Input onChange={onChange} />
-      <Button onClick={() => onActive('chat')}>Active Chat</Button>
-      <Button onClick={() => onActive('translate')}>Active Translate</Button>
-      <Button onClick={() => onActive('write')}>Active Write</Button>
-      <Button onClick={() => onActive('refine')}>Active Refine</Button>
-      <Button onClick={() => setDraggable(draggable => !draggable)}>Toggle Draggable</Button>
+      <div className="mb-2 w-1/2">
+        <Input onChange={onChange} />
+      </div>
+
+      <Button className="mr-2" onClick={() => onActive('chat')}>
+        Active Chat
+      </Button>
+      <Button className="mr-2" onClick={() => onActive('translate')}>
+        Active Translate
+      </Button>
+      <Button className="mr-2" onClick={() => onActive('write')}>
+        Active Write
+      </Button>
+      <Button className="mr-2" onClick={() => onActive('refine')}>
+        Active Refine
+      </Button>
+      <Button className="mr-2" onClick={() => setDraggable(draggable => !draggable)}>
+        Toggle Draggable
+      </Button>
       <SiriusAiToolbox
         visible={visible}
         onClose={onClose}
